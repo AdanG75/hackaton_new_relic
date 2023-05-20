@@ -2,6 +2,16 @@
 
 Backend para el hackaton de New Relic
 
+## Consumir API
+
+Para consumir la API se tiene como URL base a:
+    
+    https://hackaton-new-relic.herokuapp.com/
+
+Mientras ls documentación se encuentra en:
+
+    https://hackaton-new-relic.herokuapp.com/docs
+
 ## Correr en un entorno local
 
     python -m venv venv

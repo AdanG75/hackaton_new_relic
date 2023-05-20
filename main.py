@@ -1,6 +1,7 @@
 from typing import Optional
 
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 from starlette import status
 from starlette.responses import JSONResponse
 
@@ -13,6 +14,18 @@ app = FastAPI(title="Backend Hackaton", version="0.1.0")
 app.include_router(router=incendios_router.router)
 app.include_router(router=lugares_router.router)
 app.include_router(router=usuario_router.router)
+
+origins = [
+        'http://0.0.0.0/0:4200'
+    ]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*']
+)
 
 
 @app.get(

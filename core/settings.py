@@ -3,7 +3,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-IS_DEPLOYED: bool = False
+IS_DEPLOYED: bool = True
 
 
 class Settings(object):

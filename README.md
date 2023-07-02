@@ -4,11 +4,11 @@ Backend para el hackaton de New Relic
 
 ## Consumir API
 
-Para consumir la API se tiene como URL base a:
+Para consumir la API se tiene como URL base a (actualmente no disponible):
     
     https://hackaton-new-relic.herokuapp.com/
 
-Mientras ls documentación se encuentra en:
+Mientras ls documentación se encuentra en (actualmente no disponible):
 
     https://hackaton-new-relic.herokuapp.com/docs
 
